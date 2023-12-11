@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import Background from "../components/Background";
 import HikeCard from "../components/HikeCard";
+import Reviews from "../components/Reviews";
+
 
 import Menu from "../components/Menu";
 import Button from "../components/Button";
@@ -78,27 +80,53 @@ export default function HikeDetails() {
             </span>
           </div>
           
+          <div className="d-hikedetails_title--title">
 
           <h1 className="text-white">{selectedHike.title}</h1>
+          <button className="btn btn-lg btn-dark shadow rounded-pill btn-actions" title="Favorite it" ><span class="material-symbols-outlined">favorite</span></button>
+          <button className="btn btn-lg btn-dark shadow rounded-pill btn-actions" title="Rate it" ><span class="material-symbols-outlined">star</span></button>
+          <button className="btn btn-lg btn-dark shadow rounded-pill btn-actions" title="Find groups" ><span class="material-symbols-outlined">groups</span></button>
+
+
+          </div>
         </div>
         <div className="hikedetails_card">
           <div className="row">
             <div className="col-lg-6 me-lg-5">
               <h4 className="mb-3">HIKING</h4>
               <p>{selectedHike.hikingExplained}</p>
+              <h4 className="mb-3 mt-5">GALLERY</h4>
+              <img className="img-fluid" src={selectedHike.imageUrl} alt={selectedHike.title}/>
+              <h4 className="mb-3 mt-5">EXPLORE +</h4>
+              <div className="explore">
+
+              <button className="btn btn-dark rounded-pill explore">Official Site<span class="material-symbols-outlined">computer</span></button>
+              <button className="btn btn-dark rounded-pill explore">Maps<span class="material-symbols-outlined">map</span></button>
+              <button className="btn btn-dark rounded-pill explore">Contact<span class="material-symbols-outlined">phone</span></button>
+              </div>
+              <h4 className="mb-3 mt-5">FROM HIKERS</h4>
+              
+              <Reviews/>
+
+
 
               
 
 
             </div>
             <div className="col-lg-5 ms-lg-5 ps-lg-5 border-start">
-              <h4  className="mb-3">Location</h4>
-              <div className="d-flex justify-content-center mb-5">
+              <div className="d-flex align-items-start mb-5">
+
+              <h4  className="mt-1 me-3">Location</h4>
+              </div>
+              <div className="d-flex flex-column justify-content-center mb-5">
                 <img
                   className="map-control"
                   src={selectedHike.map}
                   alt={selectedHike.title}
                 />
+              <button className="btn btn-dark w-25 align-self-end me-3 rounded-pill mt-3">GPS Coordinates</button>
+
               </div>
               <h4>Hikes in {selectedHike.continent}</h4>
 

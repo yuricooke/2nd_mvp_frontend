@@ -71,17 +71,26 @@
   align-items: center;
   gap: 10px;
   color: #cccccc;
-
+  border: none;
   border-radius: 35px;
-  border: 1px solid rgba(245, 245, 245, 0.30);
-  background: #353535;
+  background: #212529;
 
   cursor: pointer;
+}
+
+.Button:Hover {
+  background: #424649;
+
 }
 
 .Button .IconButton {
   height: 20px;
 }  
+
+.btn-user {
+ font-size: 48px;
+
+}
 
 
 /* You can add more styles as needed */

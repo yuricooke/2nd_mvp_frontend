@@ -2,12 +2,12 @@ import React from "react";
 import Icon from "./Icon";
 
 import "./Components.css"
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 function Menu() {
 
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
     const icons = [
         { type: "hiking" },
@@ -17,7 +17,7 @@ function Menu() {
 
     return (
         <div className="menu_navbar">
-            <img src="../great_hikes.svg" alt="Great Hikes" width="40px" style={{cursor: "pointer"}} onClick={() => navigate(`/Hikes`)}/>
+            <button className="btn btn-lg btn-dark rounded-pill btn-actions" title="Account" ><span class="material-symbols-outlined btn-user">person</span></button>
             <div className="menu_icons">
             {icons.map((icon, index) => (
                 <Icon key={index} type={icon.type} />
