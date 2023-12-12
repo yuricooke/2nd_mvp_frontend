@@ -78,6 +78,11 @@ line-height: normal;
 
 }
 
+.more-info {
+  display: flex;
+  align-items: center;
+}
+
 .Carousel {
   margin-top: 60px;
   overflow-x: hidden;

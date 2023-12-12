@@ -1,3 +1,4 @@
+
 import { useNavigate } from "react-router-dom";
 
 import "./Home.css";
@@ -6,16 +7,17 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
+
     <div className="Home">
       <video autoPlay muted loop className="video-background" id="video-bg">
-      <source src="hikes.mp4" type="video/mp4" />
+      <source src="http://yuricooke.com/mvp/hikes.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="Glassbox">
         <div className="d-flex flex-column justify-content-center">
           <div className="Logo_Home">
             <img
-              src="great_hikes.svg"
+              src="http://yuricooke.com/mvp/great_hikes.svg"
               className="img-fluid"
               alt="Great Hikes"
             />

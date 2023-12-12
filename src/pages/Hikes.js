@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Menu from "../components/Menu";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import Background from "../components/Background";
 import Carousel from "../components/Carousel";
 import HikeCard from "../components/HikeCard";
@@ -42,7 +42,7 @@ export default function Hikes() {
       <div className="row">
         <div className="col-lg-6 Hikes_Content">
           <div className="Great_Hikes">
-            <img src="great_hikes.svg" alt="Great Hikes" width="110px"/>
+            <img src="http://yuricooke.com/mvp/great_hikes.svg" alt="Great Hikes" width="110px"/>
             <h1>Great Hikes</h1>
           </div>
             
@@ -62,7 +62,8 @@ export default function Hikes() {
           </div>
 
           <div>
-            <Button label="Hike info!" icon="hiking" iconPosition="left" className="IconButton" onClick={() => navigate(`/Hikes/${selectedHike.id}`)} />
+            <button className="btn btn-success btn-lg rounded-pill more-info my-3" onClick={() => navigate(`/Hikes/${selectedHike.id}`)}><span class="material-symbols-outlined">hiking</span> Let's Hike!</button>
+            {/* <Button label="Hike info!" icon="hiking" iconPosition="left" className="IconButton" onClick={() => navigate(`/Hikes/${selectedHike.id}`)} /> */}
           </div>
 
         </div>

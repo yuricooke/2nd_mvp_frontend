@@ -16,8 +16,8 @@ function Menu() {
     ];
 
     return (
-        <div className="menu_navbar">
-            <button className="btn btn-lg btn-dark rounded-pill btn-actions" title="Account" ><span class="material-symbols-outlined btn-user">person</span></button>
+        <div className="menu_navbar pt-5">
+            <button className="btn btn-lg btn-dark rounded-pill btn-actions mt-3" title="Account" ><span class="material-symbols-outlined btn-user">person</span></button>
             <div className="menu_icons">
             {icons.map((icon, index) => (
                 <Icon key={index} type={icon.type} />
