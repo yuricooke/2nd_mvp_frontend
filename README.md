@@ -2,7 +2,7 @@
 
 # Great Hikes 
 
-**Veja a aplicação em: [Great Hikes](www.yuricooke.github.io/great_hikes).**
+**Veja a aplicação em: [Great Hikes](www.yuricooke.com).**
 
 Este projeto MVP faz parte da Sprint de Desenvolvimento Frontend Avançado, do curso de Pós-graduação - Desenvovimento FullStack, da PUC-Rio.
 
